@@ -1,4 +1,50 @@
+/* Display menu */
+.menu {
+  display: none;
+}
+
 /* Mobile */
-.header img {
+.navbar img {
   width: 2rem;
+}
+
+svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+}
+
+.circle {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #000034;
+background-image: linear-gradient(180deg, #000034 50%, #000000 100%);
+
+  animation: psycho 2s linear infinite;
+}
+
+.circle-multiple {
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes psycho {
+  0% {
+    transform: rotate(0deg) scale(1) translate(0, 0);
+  }
+  33% {
+    transform: rotate(360deg) scale(1) translate(1px, 1px);
+  }
+  66% {
+    transform: rotate(720deg) scale(1) translate(-1px, -1px);
+  }
+  100% {
+    transform: rotate(1080deg) scale(1) translate(0, 0);
+  }
 }
