@@ -3,7 +3,11 @@
 
   --Blue: #000034;
   --Mallow: #f0e7e2;
-  --Light-Blue: #00B38F;
+  --Green: #00B38F;
+
+  --Dark-Purple: #242132;
+  --Light-Purple: #AE8CFA;
+  --White: #FEFCFF;
 
 }
 
@@ -14,13 +18,8 @@
 }
 
 @font-face {
-  font-family: 'Reem Kufi';
-  src: url(./../fonts/Reem_Kufi/ReemKufi-Bold.ttf);
-}
-
-@font-face {
-  font-family: 'Bahiana';
-  src: url(./../fonts/Bahiana/Bahiana-Regular.ttf);
+  font-family: 'Boska';
+  src: url(./../fonts/Boska/Boska-Regular.otf);
 }
  
 /* Box sizing rules */
@@ -47,6 +46,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+  background-color: var(--Dark-Purple);
   font-family: 'Glory';
   min-height: 100vh;
   line-height: 1.5;
@@ -77,6 +77,6 @@ select {
   }
 }
 
-/* Bootstrap css */
+/* Bootstrap css
 .container {
-}
+} */
