@@ -35,6 +35,7 @@
 
 .bar {
   background-color: var(--Light-Purple);
+  border-radius: 10px;
   display: block;
   height: 3px;
   margin: 5px auto;
