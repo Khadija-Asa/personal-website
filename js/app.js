@@ -18,7 +18,7 @@ function closeMenu() {
     navMenu.classList.remove("active");  
 }
 
-//Gsap animation
+// Gsap animation
 
 // let tl = gsap.timeline();
 
@@ -31,3 +31,22 @@ function closeMenu() {
 //     duration: .75,
 //     x: '-100%'
 // });
+
+// OVERLAY
+TweenMax.to(".first", 1.5, {
+    delay: .5,
+    top: "-100%",
+    ease: Expo.easeInOut
+  });
+
+TweenMax.to(".second", 1.5, {
+    delay: .7,
+    top: "-100%",
+    ease: Expo.easeInOut
+  });
+
+TweenMax.to(".third", 1.5, {
+    delay: .9,
+    top: "-100%",
+    ease: Expo.easeInOut
+  });

@@ -1,28 +1,4 @@
-/* mobile screensize */
 
-.header {
-  justify-content: space-between;
-  padding: 1rem 0;
-  width: 100%;
-}
-.header img {
-  width: 2.5rem;
-}
-
-/* contact button */
-.button {
-  background-color: var(--Light-Purple);
-  border: none;
-  border-radius: 50px;
-  font-family: 'Boska';
-  font-weight: bolder;
-  padding: .4rem 1.5rem;
-}
-
-.button a {
-  color: var(--White);
-  text-transform: uppercase;
-}
 
 /* menu arrow */
 
