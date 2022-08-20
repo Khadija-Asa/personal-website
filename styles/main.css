@@ -80,3 +80,9 @@ select {
 /* Bootstrap css
 .container {
 } */
+
+/* main style padding */
+.main-style {
+  padding: 1rem;
+  width: 100%;
+}
