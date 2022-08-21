@@ -21,6 +21,11 @@
   font-family: 'Boska';
   src: url(./../fonts/Boska/Boska-Regular.otf);
 }
+
+@font-face {
+  font-family: 'Aboreto';
+  src: url(./../fonts/Aboreto/Aboreto-Regular.ttf);
+}
  
 /* Box sizing rules */
 *,
@@ -37,6 +42,8 @@ ol[role='list'],
 a, li, ul {
   list-style: none;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Set core root defaults */
@@ -48,7 +55,6 @@ html:focus-within {
 body {
   background-color: var(--Dark-Purple);
   font-family: 'Glory';
-  min-height: 100vh;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
 }
@@ -83,6 +89,15 @@ select {
 
 /* main style padding */
 .main-style {
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   width: 100%;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  background-color:var(--White);
+}
+::-webkit-scrollbar-thumb{
+  background-color:var(--Light-Purple);
+  border-radius: 10px;
 }
