@@ -20,19 +20,8 @@ function closeMenu() {
 
 // Gsap animation
 
-// let tl = gsap.timeline();
 
-// tl.from('.brand, .button' ,{
-//     duration: 1,
-//     opacity: 0
-// });
-
-// tl.from('.brand',{
-//     duration: .75,
-//     x: '-100%'
-// });
-
-// OVERLAY
+// Overlay
 TweenMax.to(".first", 1.5, {
     delay: .5,
     top: "-100%",
@@ -50,3 +39,38 @@ TweenMax.to(".third", 1.5, {
     top: "-100%",
     ease: Expo.easeInOut
   });
+
+// Landing animation
+let tl = gsap.timeline();
+
+tl.from(".line", {
+  delay: 3,
+  duration: 1,
+  width: "0px",
+});
+
+tl.from(".parallelogram", {
+  duration: 1,
+  width: "0px",
+});
+
+tl.from(".para-1", {
+  duration: .5,
+  opacity: 0,
+});
+
+tl.from(".para-2", {
+  duration: .5,
+  opacity: 0,
+});
+
+tl.from(".para-3", {
+  duration: .5,
+  opacity: 0,
+});
+
+tl.from(".para-4", {
+  duration: .5,
+  y: -60,
+  opacity: 0,
+});

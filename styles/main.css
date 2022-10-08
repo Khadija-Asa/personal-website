@@ -21,6 +21,11 @@
   font-family: 'Aboreto';
   src: url(./../fonts/Aboreto/Aboreto-Regular.ttf);
 }
+
+@font-face {
+  font-family: 'Anton';
+  src: url(./../fonts/Anton/Anton-Regular.ttf);
+}
  
 /* Box sizing rules */
 *,
@@ -85,7 +90,7 @@ select {
 
 /* main style padding */
 .main-style {
-  padding: 1rem 1rem 0 1rem;
+  padding: 0 1.5rem 0 1.5rem;
   width: 100%;
 }
 
@@ -119,4 +124,27 @@ select {
 .third {
   background: var(--Light-Purple);
   left: 66.6%;
+}
+
+/* page title */
+.title-page {
+  align-items: center;
+  color: var(--White);
+  font-family: 'Aboreto';
+  font-size: 1rem;
+  gap: .8rem;
+  justify-content: center;
+}
+
+.title-number {
+  font-family: 'Boska';
+  font-weight: 600;
+  letter-spacing: .2rem;
+}
+
+.title-page hr {
+  border-top: 2px solid;
+  color: var(--Light-Purple);
+  width: 2rem;
+  z-index: -1;
 }
