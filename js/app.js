@@ -20,22 +20,21 @@ function closeMenu() {
 
 // Gsap animation
 
-
 // Overlay
 TweenMax.to(".first", 1.5, {
-    delay: .5,
+    delay: .4,
     top: "-100%",
     ease: Expo.easeInOut
   });
 
 TweenMax.to(".second", 1.5, {
-    delay: .7,
+    delay: .6,
     top: "-100%",
     ease: Expo.easeInOut
   });
 
 TweenMax.to(".third", 1.5, {
-    delay: .9,
+    delay: .8,
     top: "-100%",
     ease: Expo.easeInOut
   });
@@ -44,7 +43,7 @@ TweenMax.to(".third", 1.5, {
 let tl = gsap.timeline();
 
 tl.from(".line", {
-  delay: 3,
+  delay: 2,
   duration: 1,
   width: "0px",
 });
@@ -71,6 +70,5 @@ tl.from(".para-3", {
 
 tl.from(".para-4", {
   duration: .5,
-  y: -60,
   opacity: 0,
 });
