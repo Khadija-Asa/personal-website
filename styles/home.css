@@ -59,8 +59,7 @@
   color: var(--White);
   flex-direction: column;
   gap: 1rem;
-  margin-top: 4rem;
-  vertical-align: middle;
+  margin-top: 3.5rem;
 }
 
 .ri-checkbox-blank-circle-line:before {
@@ -76,7 +75,8 @@
 
 .paragraph-highlight {
   color: var(--Light-Purple);
-  font-weight: 600;
+  font-weight: 100;
+  opacity: 1;
 }
 
 /* paragraph button */
@@ -233,7 +233,27 @@
   color: var(--White);
   margin: 0 16px 0 0;
   line-height: 1;
+  animation: horizontal-shaking 4s infinite;
 }
+
+@keyframes horizontal-shaking {
+  0% { 
+    transform: translateX(0) 
+  }
+  25% { 
+    transform: translateX(5px) 
+  }
+  50% { 
+    transform: translateX(-5px) 
+  }
+  75% { 
+    transform: translateX(5px) 
+  }
+  100% { 
+    transform: translateX(0) 
+  }
+}
+
 
 .animated-arrow > .paragraph-main > .the-arrow {
   position: relative;
