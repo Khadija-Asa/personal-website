@@ -26,6 +26,11 @@
   font-family: 'Anton';
   src: url(./../fonts/Anton/Anton-Regular.ttf);
 }
+
+@font-face {
+  font-family: 'Aventi';
+  src: url(./../fonts/Aventi/AventiBold-x3VVj.ttf);
+}
  
 /* Box sizing rules */
 *,
@@ -83,10 +88,6 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
-/* Bootstrap css
-.container {
-} */
 
 /* main style padding */
 .main-style {
