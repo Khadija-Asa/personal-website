@@ -9,41 +9,46 @@ footer {
   padding: 3rem 0 0 0;
 }
 
-.footer h5 {
+/* titles */
+.footer-title h5 {
   color: var(--White);
   font-family: 'Aventi';
   font-size: 1.8rem;
   margin-bottom: 0;
 }
 
-.footer h6 {
+.footer-title h6 {
   color: var(--Dark-Purple);
   font-family: 'Anton';
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: italic;
 }
 
-.footer h6 i {
+.footer-highlight {
+  font-size: larger;
+}
+
+.footer-title h6 i {
   font-size: .5rem;
 }
 
 /* buttons */
 .footer-button span {
-  color: var(--White);
-  font-size: 1.2rem;
+  color: var(--Dark-Purple);
+  font-family: 'Anton';
+  font-size: 1.5rem;
 }
 
 .footer-button a {
   background-color: var(--Light-Purple);
   border: 1px solid var(--White);
   border-radius: .3rem;
-  box-shadow: 5px 5px 0 rgba(0,0,0,.5);
   color: var(--Dark-Purple);
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
-  margin: 10px;
-  padding: .5rem 1rem;
+  margin: 5px;
+  padding: .5rem;
   text-decoration: none;
   width: 150px;
 }
@@ -55,18 +60,17 @@ footer {
 /* bottom */
 .footer-bottom p {
   justify-content: space-between;
-  padding: 0;
 }
 
-.footer-bottom p span {
+.bottom-title span {
   color: var(--White);
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
-.footer-bottom p .copy-i i {
+.bottom-title .copy-i i {
   font-size: .5rem;
 }
 
-.footer-bottom p .plus-i i {
+/* .bottom-title p .plus-i i {
   font-size: 1rem;
-}
+} */
