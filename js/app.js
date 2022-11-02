@@ -42,33 +42,40 @@ TweenMax.to(".third", 1.5, {
 // Landing animation
 let tl = gsap.timeline();
 
-tl.from(".line", {
-  delay: 2,
-  duration: 1,
-  width: "0px",
-});
+// tl.from(".line", {
+//   delay: 2,
+//   duration: 1,
+//   width: "0px",
+// });
 
-tl.from(".parallelogram", {
-  duration: 1,
-  width: "0px",
-});
+// tl.from(".parallelogram", {
+//   duration: 1,
+//   width: "0px",
+// });
 
-tl.from(".para-1", {
-  duration: .5,
-  opacity: 0,
-});
+// tl.from(".para-1", {
+//   duration: .5,
+//   opacity: 0,
+// });
 
-tl.from(".para-2", {
-  duration: .5,
-  opacity: 0,
-});
+// tl.from(".para-2", {
+//   duration: .5,
+//   opacity: 0,
+// });
 
-tl.from(".para-3", {
-  duration: .5,
-  opacity: 0,
-});
+// tl.from(".para-3", {
+//   duration: .5,
+//   opacity: 0,
+// });
 
-tl.from(".para-4", {
-  duration: .5,
-  opacity: 0,
-});
+// tl.from(".para-4", {
+//   duration: .5,
+//   opacity: 0,
+// });
+
+// clear the form after submission
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}

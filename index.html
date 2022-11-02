@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Khadidja Ait Si Ali">
   <meta name="theme-color" content="#AE8CFA">
-  <meta name="keywords" content="développeur, web, site internet, développeur web, webmaster, khadidja, ait si ali">
+  <meta name="keywords" content="développeur, agence web, site internet, développeur web, webmaster, khadidja, ait si ali">
   <meta name="robots" content="index, follow">
   <meta name="description" content="Développeur Web Front-End Freelance. Développement de site internet responsive.">
   <title>Khadidja A. Développeur Web</title>
@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/home.css">
   <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/services.css">
   
 </head>
 
@@ -113,29 +114,36 @@
     <!-- home -->
     <section class="home" id="home">
 
-      <!-- title -->
-      <h4 class="title-page d-flex">
-        <span class="title-number">01</span>
-        <hr class="line">
-        <span class="title-name text-lowercase">home</span>
-      </h4>
-
       <!-- main -->
       <div class="landing-page">
 
-        <h1 class="landing-text text-uppercase">
-          <span style="--delay: 2s;">creation de</span>
-          <span style="--delay: 2.4s;">site internet</span>
+        <h1 class="landing-title d-flex text-center text-uppercase">
+          <span class="title-one">création de</span>
+
+          <div>
+
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_0lomlgf0.json"  background="transparent"  speed="0.6"  style="width: 250px; height: 250px;"  loop  autoplay></lottie-player>
+          </div>
+
+          <span class="title-two">site internet</span>
         </h1>
 
-        <br>
-
-        <div class="landing-image d-flex"> 
-          <img src="./assets/illustrations/bust-khadidja.png" alt="Image d'illustration">
-          <span class="parallelogram"></span>
-        </div>
-
       </div>
+
+      <div class="landing-button text-center">
+        <a href="#portfolio">
+          Mes réalisations.
+        </a>
+
+        <a href="#contact">
+          Me contacter.
+        </a>
+      </div>
+      
+    </section>
+
+    <!-- services -->
+    <section id="services">
 
       <!-- paragraph -->
       <div class="landing-paragraph d-flex">
@@ -164,17 +172,7 @@
           </a>
         </div>
 
-        <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_0lomlgf0.json"  background="transparent"  speed="0.6"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player> -->
-
-      </div>
-      
     </section>
-
-    <!-- services -->
-    <section id="services">
-
-    </section>fixed
 
     <!-- portfolio -->
     <section id="portfolio">
@@ -191,7 +189,7 @@
   <footer>
 
     <!-- footer -->
-    <section class="footer" id="footer position-fixed">
+    <section class="footer" id="footer">
       <!-- title -->
       <div class="footer-title text-center text-uppercase">
 
@@ -208,21 +206,20 @@
       <!-- buttons -->
       <div class="footer-button text-center mt-5">
 
-        <a href="">
+        <a href="https://www.linkedin.com/in/khadidja-ait-si-ali/" target="_blank">
           Linkedin.
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/" target="_blank">
           Instagram.
         </a>
-        <a href="">
+        <a href="https://www.malt.fr/profile/khadidjaaitsiali1" target="_blank">
           Malt.
         </a>
-        <a href="">
+        <a href="https://github.com/Khadija-Asa" target="_blank">
           Github.
         </a>
     
       </div>
-        <!-- <span class="plus-i">Créativité <i class="fa-regular fa-plus"></i> Intéractivité</span> -->
       
       <!-- bottom -->
       <div class="footer-bottom"> 
@@ -231,7 +228,7 @@
           <span></span>
         </p>
 
-        <p class="bottom-title d-flex pt-5 mb-0 pb-1">
+        <p class="bottom-title d-flex pt-5 mb-0 pb-1 main-style">
           <span class="copy-i">Tous droits réservés <i class="fa-regular fa-copyright"></i> 2022</span>
           <span><a href="#mentions">Mentions légales</a></span>
         </p>
@@ -242,6 +239,7 @@
   </footer>
 
     <!-- JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./node_modules/gsap/dist/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
