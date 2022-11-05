@@ -4,19 +4,255 @@
   height: 100vh;
 }
 
+/* paragraph */
+.home-paragraph {
+  border-left: 1px solid var(--Light-Purple);
+  border-width: 3px;
+  color: var(--White);
+  font-style: italic;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+  max-width: 240px;
+}
+
 /* landing page */
 .landing-page {
-  margin-top: 1rem;
-}
-
-.landing-page h1 {
-  color: var(--Light-Purple);
-  font-family: 'Aventi';
-  font-size: 2.4rem;
-}
-
-.landing-title {
+  align-items: center;
+  margin-top: 6rem;
   flex-direction: column;
+  gap: 9rem;
+}
+
+/* title */
+.landing-page h1 {
+  align-items: center;
+  color: var(--Light-Purple);
+  flex-direction: column;
+  font-family: 'Aventi';
+  font-size: clamp(2.4rem, -0.1429rem + 10.7143vw, 10rem);
+  margin: 0 auto;
+}
+
+.landing-title lottie-player {
+  height: clamp(15.625rem, 11.1378rem + 22.4359vw, 37.5rem);
+  margin-top: -50px;
+  position: absolute;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .title-line {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* paragraph */
+.landing-paragraph {
+  color: var(--White);
+  font-size: .9rem;
+  flex-direction: column;
+  text-align: justify;
+  gap: 1rem;
+}
+
+.ri-checkbox-blank-circle-line:before {
+  color: var(--Light-Purple);
+  font-size: .8rem;
+  margin-right: .2rem;
+  vertical-align: middle;
+}
+
+.landing-paragraph ri {
+  top: 50px;
+}
+
+.paragraph-highlight {
+  color: var(--Light-Purple);
+  font-weight: 100;
+  opacity: 1;
+}
+
+/* paragraph button */
+.the-arrow {
+  transition: all 0.2s;
+  user-select: none;
+  width: 1px;
+}
+
+.the-arrow.-left {
+  left: 0;
+  position: absolute;
+  top: 60%;
+}
+
+.the-arrow.-left > .shaft {
+  background-color: var(--Light-Purple);
+  width: 0;
+}
+
+.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
+  background-color: var(--Light-Purple);
+  width: 0;
+}
+
+.the-arrow.-left > .shaft:before {
+  transform: rotate(0);
+}
+
+.the-arrow.-left > .shaft:after {
+  transform: rotate(0);
+}
+
+.the-arrow.-right {
+  top: 3px;
+}
+
+.the-arrow.-right > .shaft {
+  transition-delay: 0.2s;
+  width: 1px;
+}
+
+.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
+  transition-delay: 0.3s;
+  transition: all 0.5s;
+  width: 8px;
+}
+
+.the-arrow.-right > .shaft:before {
+
+  transform: rotate(40deg);
+}
+
+.the-arrow.-right > .shaft:after {
+  transform: rotate(-40deg);
+}
+
+.the-arrow > .shaft {
+  background-color: var(--Light-Purple);
+  display: block;
+  height: 1px;
+  position: relative;
+  top: -3.8px;
+  transition: all 0.2s;
+  transition-delay: 0;
+  will-change: transform;
+}
+
+.the-arrow > .shaft:before, .the-arrow > .shaft:after {
+  background-color: var(--Light-Purple);
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.2s;
+  transition-delay: 0;
+}
+
+.the-arrow > .shaft:before {
+  transform-origin: top right;
+}
+
+.the-arrow > .shaft:after {
+  transform-origin: bottom right;
+}
+
+.animated-arrow {
+  display: inline-block;
+  color: var(--Light-Purple);
+  font-style: italic;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.animated-arrow:hover {
+  color: var(--Light-Purple);
+}
+
+.animated-arrow:hover > .the-arrow.-left > .shaft {
+  transition-delay: 0.1s;
+  background-color: var(--Light-Purple);
+  width: 50px;
+}
+
+.animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+  transition-delay: 0.1s;
+  background-color: var(--Light-Purple);
+  width: 8px;
+}
+
+.animated-arrow:hover > .the-arrow.-left > .shaft:before {
+  transform: rotate(40deg);
+}
+
+.animated-arrow:hover > .the-arrow.-left > .shaft:after {
+  transform: rotate(-40deg);
+}
+
+.animated-arrow:hover > .paragraph-main {
+  transform: translateX(17px);
+  transform: translateX(60px);
+}
+
+.animated-arrow:hover > .paragraph-main > .the-arrow.-right > .shaft {
+  transform: translateX(200%);
+  transition-delay: 0;
+  width: 0;
+}
+
+.animated-arrow:hover > .paragraph-main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .paragraph-main > .the-arrow.-right > .shaft:after {
+  transition-delay: 0;
+  transition: all 0.1s;
+  width: 0;
+}
+
+.animated-arrow:hover > .paragraph-main > .the-arrow.-right > .shaft:before {
+  transform: rotate(0);
+}
+
+.animated-arrow:hover > .paragraph-main > .the-arrow.-right > .shaft:after {
+  transform: rotate(0);
+}
+
+.animated-arrow > .paragraph-main {
+  align-items: center;
+  display: flex;
+  transition: all 0.2s;
+}
+
+.animated-arrow > .paragraph-main > .paragraph-text {
+  animation: horizontal-shaking 4s infinite;
+  color: var(--White);
+  font-size: .8rem;
+  margin: 0 16px 0 0;
+  line-height: 1;
+}
+
+.animated-arrow > .paragraph-main > .the-arrow {
+  position: relative;
+}
+
+@keyframes horizontal-shaking {
+  0% { 
+    transform: translateX(0) 
+  }
+  25% { 
+    transform: translateX(5px) 
+  }
+  50% { 
+    transform: translateX(-5px) 
+  }
+  75% { 
+    transform: translateX(5px) 
+  }
+  100% { 
+    transform: translateX(0) 
+  }
 }
 
 /* button */
@@ -28,12 +264,18 @@
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
-  margin: 5px;
+  margin: 8px;
   padding: .5rem;
   text-decoration: none;
-  width: 150px;
+  transition: all .2s ease-in-out;
+  width: 200px;
+}
+
+.landing-button a:nth-child(1) {
+  background-color: var(--Light-Purple);
 }
 
 .landing-button a:hover {
   background-color: var(--Light-Purple);
+  transform: translate(0, -5px);
 }
