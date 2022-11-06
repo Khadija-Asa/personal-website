@@ -35,9 +35,9 @@
 <body>
 
   <!-- overlay -->
-  <div class="overlay first"></div>
+  <!-- <div class="overlay first"></div>
   <div class="overlay second"></div>
-  <div class="overlay third"></div>
+  <div class="overlay third"></div> -->
 
   <header>
     <div class="header d-flex">
@@ -70,7 +70,7 @@
           <li class="nav-item">
             <a href="#" class="nav-link">
               <span class="menu-number">01 <hr> </span>
-              home
+              accueil
             </a>
           </li>
           <li class="nav-item">
@@ -116,34 +116,38 @@
     <!-- home -->
     <section class="home" id="home">
 
-      <!-- main -->
-      <p class="home-paragraph d-flex">
-        <!-- <span class="paragraph-line"></span> -->
-        Hey, je suis Khadidja Ait Si Ali <br> développeur et webdesigner !
-      </p>
+      <div class="title-number d-flex">
+        <span class="number-page">01</span>
+        <span class="number-outoff">/04</span> <br>
+        <hr>
+      </div>
 
-      <div class="landing-page d-flex text-center">
-
-        <h1 class="landing-title d-flex text-center text-uppercase">
-          <div class="title-line">
-            <span>création de</span>
-            <span>site internet</span>
-          </div>
-
-          <lottie-player  src="https://assets9.lottiefiles.com/packages/lf20_0lomlgf0.json"  background="transparent"  speed="0.6"  loop  autoplay></lottie-player>
+      <div class="home-title reveal splitting animate">
+        <h1 class="text-uppercase" style="--word-total:4;">         
+          <span class="word" style="--word-index:0;">Web -</span> <br>
+          <span class="word" style="--word-index:1;">Designer</span> <br>
+          <span class="word" style="--word-index:2;">& creative</span> <br>
+          <span class="word" style="--word-index:3;">Developper</span>
         </h1>
 
-        <!-- paragraph -->
-        <div class="landing-paragraph d-flex">
-          <p>
-            Je transforme des idées en projet web <span class="paragraph-highlight">incroyable</span>, 
-            <span class="paragraph-highlight">créatif</span> et <span class="paragraph-highlight">performant</span>. <br> <br>
-            
-            <span class="para-1 d-flex"><i class="ri-checkbox-blank-circle-line"></i> Vous avez une idée ?</span>
-            <span class="para-2 d-flex"><i class="ri-checkbox-blank-circle-line"></i> Vous lancez votre business ?</span>
-            <span class="para-3 d-flex"><i class="ri-checkbox-blank-circle-line"></i> Vous souhaitez plus de visibilité ?</span>
-          </p>
+        <p class="home-paragraph ">
+          <span class="word" style="--word-index:4;">Je</span>
+          <span class="word" style="--word-index:5;">développe</span>
+          <span class="word" style="--word-index:6;">des</span>
+          <span class="word" style="--word-index:7;">idées</span>
+          <span class="word" style="--word-index:8;">en</span>
+          <span class="word" style="--word-index:9;">projet</span>
+          <span class="word" style="--word-index:10;">web</span>
+          <span class="word" style="--word-index:11;">incroyable,</span>
+          <span class="word" style="--word-index:12;">créatif</span>
+          <span class="word" style="--word-index:13;">et</span>
+          <span class="word" style="--word-index:14;">performant.</span>
+        </p>
 
+        <p class="landing-paragraph">
+          <span class="para-1 d-flex"><i class="ri-checkbox-blank-circle-line"></i> Vous avez une idée ?</span>
+          <span class="para-2 d-flex"><i class="ri-checkbox-blank-circle-line"></i> Vous lancez votre business ?</span>
+          <span class="para-3 d-flex"><i class="ri-checkbox-blank-circle-line"></i> Vous souhaitez plus de visibilité ?</span>
           <div class="paragraph-button d-flex">
             <a class="animated-arrow" href="#contact">
               <span class="the-arrow -left">
@@ -159,18 +163,26 @@
               </span>
             </a>
           </div>
+        </p>
+      </div>
 
-          <div class="landing-button text-center">
-            <a href="#contact">
-              Me contacter.
-            </a>
+      <div class="distortion">
+      </div>
 
-            <a href="#portfolio">
-              Mes créations.
-            </a>
-          </div>
-
+      <div class="landing-button d-flex">
+        <div class="first-button">
+          <a href="#contact">
+            Me contacter.
+          </a>
         </div>
+
+        <div class="second-button">
+          <a href="#portfolio">
+            Mes créations.
+          </a>
+        </div>
+      </div> 
+
     </section>
 
     <!-- services -->
@@ -245,12 +257,19 @@
 
   </footer>
 
-    <!-- JavaScript -->
+    <!-- Script -->
+    <!-- lottie -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- gsap -->
     <script src="./node_modules/gsap/dist/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- threejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+    integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- javascript -->
     <script src="js/app.js"></script>
+
   </body>
 </html>
