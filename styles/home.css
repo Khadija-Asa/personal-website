@@ -9,7 +9,7 @@
   color: var(--Light-Purple);
   font-family: 'Aventi';
   font-size: clamp(2.5rem, -0.1429rem + 10.7143vw, 5rem);
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .home-title i {
@@ -46,52 +46,6 @@
     opacity: 1;
   }
 }
-
-
-/* paragraph */
-/* .home-paragraph {
-  border-left: 1px solid var(--Light-Purple);
-  border-width: 3px;
-  color: var(--White);
-  font-style: italic;
-  justify-content: center;
-  margin: 0 auto;
-  margin-top: 1rem;
-  max-width: 240px;
-} */
-
-/* landing page */
-/* .landing-page {
-  align-items: center;
-  margin-top: 6rem;
-  flex-direction: column;
-  gap: 9rem;
-} */
-
-/* title */
-/* .landing-page h1 {
-  align-items: center;
-  color: var(--Light-Purple);
-  flex-direction: column;
-  font-family: 'Aventi';
-  font-size: clamp(2.4rem, -0.1429rem + 10.7143vw, 10rem);
-  margin: 0 auto;
-}
-
-.landing-title lottie-player {
-  height: clamp(15.625rem, 11.1378rem + 22.4359vw, 37.5rem);
-  margin-top: -50px;
-  position: absolute;
-  z-index: -1;
-}
-
-@media screen and (max-width: 768px) {
-  .title-line {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-} */
 
 /* paragraph */
 .paragraph-list {
@@ -337,7 +291,7 @@
 
 .button-bg {
   border: 35px solid var(--Light-Purple);
-  filter: blur(100px);
+  filter: blur(50px);
   position: absolute;
   width: 90%;
   z-index: -1;
