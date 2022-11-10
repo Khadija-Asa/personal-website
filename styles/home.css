@@ -263,15 +263,6 @@
   }
 }
 
-/* distortion */
-.distortion {
-  height: 500px;
-  position: absolute;
-  right: 100px;
-  top: 100px;
-  width: 500px;
-}
-
 /* button */
 .landing-button {
   margin-top: 3rem;
