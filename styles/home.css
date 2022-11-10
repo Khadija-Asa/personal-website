@@ -13,11 +13,12 @@
 }
 
 .home-title i {
-  font-size: 35%;
+  font-size: 30%;
 }
 
 .home-paragraph {
   color: var(--White);
+  max-width: 320px;
 }
 
 .reveal {
@@ -279,7 +280,7 @@
   margin: 10px;
   padding: .7rem 1.2rem;
   text-transform: uppercase;
-  transition: all .2s ease-in-out;
+  transition: all .5s ease;
   width: 130px;
 }
 
@@ -291,8 +292,33 @@
 
 .button-bg {
   border: 35px solid var(--Light-Purple);
-  filter: blur(50px);
+  filter: blur(70px);
   position: absolute;
   width: 90%;
   z-index: -1;
+}
+
+/* social media */
+.media-list {
+  flex-direction: column;
+  font-size: clamp(1.125rem, 1.0353rem + 0.4487vw, 1.5625rem);
+  gap: .7rem;
+  position: fixed;
+  right: 10px;
+  top: 150px;
+}
+
+.media-list li a {
+  color: var(--White);
+  cursor: pointer;
+  transition: all .8s ease;
+}
+
+.media-list a i:hover {
+  color: var(--Light-Purple);
+  transform: translate(0, -2px);
+}
+
+.next-arrow {
+  color: var(--Light-Purple);
 }
