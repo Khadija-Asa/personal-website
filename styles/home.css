@@ -8,12 +8,21 @@
 .home-title h1 {
   color: var(--Light-Purple);
   font-family: 'Aventi';
-  font-size: clamp(2.5rem, -0.1429rem + 10.7143vw, 5rem);
-  margin-top: 2.5rem;
+  font-size: clamp(2.8rem, 1.9385rem + 4.3077vw, 6rem);
+  margin-top: 2rem;
 }
 
 .home-title i {
   font-size: 30%;
+}
+
+.home-title lottie-player {
+  height: clamp(15.625rem, 11.1378rem + 22.4359vw, 37.5rem);
+  position: absolute;
+  right: 20px;
+  top: 120px;
+  width: clamp(15.625rem, 11.1378rem + 22.4359vw, 37.5rem);
+  z-index: -1;
 }
 
 .home-paragraph {
@@ -256,17 +265,16 @@
 
 /* distortion */
 .distortion {
-  height: 200px;
-  margin: 0 auto;
-  width: 200px;
+  height: 500px;
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  width: 500px;
 }
 
 /* button */
 .landing-button {
-  justify-content: center;
-  left: 0;
   margin-top: 3rem;
-  right: 0;
 }
 
 .landing-button a {
@@ -277,11 +285,15 @@
   cursor: pointer;
   display: inline-block;
   font-size: .8rem;
-  margin: 10px;
+  margin: 0 20px 10px 0;
   padding: .7rem 1.2rem;
   text-transform: uppercase;
   transition: all .5s ease;
   width: 130px;
+}
+
+.landing-button a:nth-child(1) {
+  background-color: var(--Light-Purple);
 }
 
 .landing-button a:hover {
@@ -294,7 +306,7 @@
   border: 35px solid var(--Light-Purple);
   filter: blur(70px);
   position: absolute;
-  width: 90%;
+  width: 18.5rem;
   z-index: -1;
 }
 
@@ -317,8 +329,4 @@
 .media-list a i:hover {
   color: var(--Light-Purple);
   transform: translate(0, -2px);
-}
-
-.next-arrow {
-  color: var(--Light-Purple);
 }
