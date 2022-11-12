@@ -1,7 +1,11 @@
 /* mobile screensize */
 
 .home {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
+  justify-content: center;
+  margin-top: -50px;
 }
 
 /* splitting word */
@@ -9,7 +13,7 @@
   color: var(--Light-Purple);
   font-family: 'Aventi';
   font-size: clamp(2.8rem, 1.9385rem + 4.3077vw, 6rem);
-  margin-top: 2rem;
+  max-width: 611px;
 }
 
 .home-title i {
@@ -19,15 +23,14 @@
 .home-title lottie-player {
   height: clamp(15.625rem, 11.1378rem + 22.4359vw, 37.5rem);
   position: absolute;
-  right: 20px;
-  top: 120px;
+  right: 9%;
+  top: 150px;
   width: clamp(15.625rem, 11.1378rem + 22.4359vw, 37.5rem);
   z-index: -1;
 }
 
 .home-paragraph {
   color: var(--White);
-  max-width: 320px;
 }
 
 .reveal {
@@ -71,10 +74,14 @@
   gap: .3rem;
 }
 
+.list-question li {
+  display: flex;
+  align-items: flex-end;
+}
+
 .list-question i {
   color: var(--Light-Purple);
-  margin-right: .2rem;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .paragraph-highlight {
@@ -320,4 +327,20 @@
 .media-list a i:hover {
   color: var(--Light-Purple);
   transform: translate(0, -2px);
+}
+
+/* larger screensize */
+@media screen and (min-width: 1024px) {
+  .home-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-title h1 {
+    max-width: 70rem;
+  }
+  .list-question {
+    flex-direction: row;
+    gap: 3rem;
+  }
 }

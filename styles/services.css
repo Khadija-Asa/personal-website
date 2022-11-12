@@ -5,29 +5,3 @@
   padding-bottom: 5rem;
 }
 
-/* distortion */
-.distortion {
-  height: 300px;
-  margin: 0 auto;
-  width: 300px;
-}
-
-.services-line {
-  border-left: 1px solid var(--White);
-  height: 20rem;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  z-index: -1;
-}
-
-.services-bg {
-  border-left: 100px solid var(--Light-Purple);
-  border-radius: 50px 50px 0 0;
-  filter: blur(5px);
-  height: 20rem;
-  left: 30%;
-  opacity: .5;
-  position: absolute;
-  z-index: -2;
-}
