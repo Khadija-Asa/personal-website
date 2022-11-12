@@ -47,9 +47,9 @@ let tl = gsap.timeline();
 new hoverEffect({
   parent: document.querySelector('.distortion'),
   intensity: 0.1,
-  image1: './../assets/illustrations/bust-three.png',
-  image2: './../assets/illustrations/bust-two.png',
-  displacementImage: './../assets/illustrations/diss.png',
+  image1: './js/bust-three.png',
+  image2: './js/bust-two.png',
+  displacementImage: './js/diss.png',
 })
 
 // clear the form after submission
