@@ -40,7 +40,6 @@
   border-right: 1px solid var(--Light-Purple);
   color: var(--White);
   display: block;
-  font-family: 'Aboreto';
   font-size: .7rem;
   font-weight: 600;
   height: 50px;
@@ -48,7 +47,7 @@
   overflow: hidden;
   padding: 0;
   position: relative;
-  width: 80%;
+  width: 90%;
 }
 
 .marquee div {

@@ -24,13 +24,14 @@
   height: clamp(15.625rem, 11.1378rem + 22.4359vw, 37.5rem);
   position: absolute;
   right: 9%;
-  top: 150px;
+  top: 18%;
   width: clamp(15.625rem, 11.1378rem + 22.4359vw, 37.5rem);
-  z-index: -1;
+  z-index: -10;
 }
 
 .home-paragraph {
   color: var(--White);
+  font-size: .9rem;
 }
 
 .reveal {
@@ -63,7 +64,7 @@
 /* paragraph */
 .paragraph-list {
   color: var(--White);
-  font-size: .9rem;
+  font-size: .8rem;
   flex-direction: column;
   text-align: justify;
   gap: 10rem;
@@ -81,7 +82,7 @@
 
 .list-question i {
   color: var(--Light-Purple);
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .paragraph-highlight {
