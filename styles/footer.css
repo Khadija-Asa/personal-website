@@ -41,8 +41,7 @@ footer {
 
 .footer-button a {
   background-color: var(--Light-Purple);
-  border: 1px solid var(--White);
-  border-radius: .3rem;
+  border: 2px solid var(--White);
   color: var(--Dark-Purple);
   cursor: pointer;
   display: inline-block;
