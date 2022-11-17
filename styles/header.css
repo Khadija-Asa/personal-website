@@ -162,7 +162,6 @@
 }
 
 .nav-links a:hover {
-  font-weight: 900;
   opacity: 1;
   transition: .3s ease;
   transform: translate(5px, 0);
