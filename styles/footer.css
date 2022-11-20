@@ -1,11 +1,10 @@
-/* mobile screensize */
-
 footer {
   background-color: var(--Light-Purple);
   margin-bottom: 0;
 }
 
 .footer {
+  bottom: 0;
   padding: 3rem 0 0 0;
 }
 
@@ -13,7 +12,7 @@ footer {
 .footer-title h5 {
   color: var(--White);
   font-family: 'Aventi';
-  font-size: 1.8rem;
+  font-size: clamp(2rem, 1.5897rem + 2.0513vw, 4rem);
   margin-bottom: 0;
 }
 
@@ -24,21 +23,11 @@ footer {
   font-style: italic;
 }
 
-.footer-highlight {
-  font-size: larger;
-}
-
 .footer-title h6 i {
   font-size: .5rem;
 }
 
 /* buttons */
-.footer-button span {
-  color: var(--Dark-Purple);
-  font-family: 'Anton';
-  font-size: 1.5rem;
-}
-
 .footer-button a {
   background-color: var(--Light-Purple);
   border: 2px solid var(--White);
@@ -46,14 +35,16 @@ footer {
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
-  margin: 5px;
+  margin: 10px;
   padding: .5rem;
   text-decoration: none;
+  transition: all .5s ease;
   width: 150px;
 }
 
 .footer-button a:hover {
   background-color: var(--White);
+  transform: translate(0, -5px);
 }
 
 /* bottom */
@@ -64,7 +55,11 @@ footer {
 .bottom-title span,
 .bottom-title a {
   color: var(--White);
-  font-size: .9rem;
+  font-size: clamp(0.75rem, 0.7397rem + 0.0513vw, 0.8rem);
+}
+
+.bottom-title a:hover {
+  color: var(--Dark-Purple);
 }
 
 .bottom-title .copy-i i {
