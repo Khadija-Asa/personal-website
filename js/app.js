@@ -40,7 +40,7 @@ TweenMax.to(".third", 1.5, {
   });
 
 // Landing animation
-let tl = gsap.timeline();
+// let tl = gsap.timeline();
 
 // tl.from('.links-separation', {
 //   duration: 5,
