@@ -134,17 +134,18 @@ select {
 }
 
 .number-page {
-  font-size: 1.3rem;
+  color: #AE8CFA;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
 .number-outoff {
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 100;
 }
 
 hr {
-  border-top: 2px solid var(--Light-Purple);
+  border-top: 4px solid var(--Light-Purple);
   width: 1.5rem;
 }
 

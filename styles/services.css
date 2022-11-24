@@ -1,62 +1,22 @@
-/* mobile screensize */
-
+/* services */
 .services {
-  /* height: max-content; */
-  padding-bottom: 5rem;
-}
-
-.smooth-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
 }
 
 .services-box {
-  justify-content: space-evenly;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-}
-
-.box {
-  background-color: var(--Light-Purple);
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  background-image: url(./../assets/illustrations/card-services.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   color: var(--White);
-  height: 200px;
-  width: 150px;
+  font-family: 'Aventi';
+  font-size: 1.7rem;
+  padding-top: 5rem;
 }
 
-.box p {
-  font-family: 'Anton';
-  text-transform: uppercase;
+.services-box p {
+  display: flex;
+  justify-content: center;
 }
 
-.box-a { 
-  grid-area: 1 / 1 / 2 / 2;
+.services-box p:nth-child(2) {
+  color: var(--Light-Purple);
+  font-style: italic;
 }
 
-.box-b { 
-  grid-area: 2 / 2 / 3 / 3; 
-}
-
-.box-c { 
-  grid-area: 3 / 1 / 4 / 2; 
-}
-
-.box-d{ 
-  grid-area: 4 / 2 / 5 / 3; 
-}
-
-.box-e { 
-  grid-area: 5 / 1 / 6 / 2; 
-}
-
-.box-f { 
-  grid-area: 6 / 2 / 7 / 3; 
-}

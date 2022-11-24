@@ -22,7 +22,7 @@
   height: clamp(15.625rem, 11.1378rem + 22.4359vw, 37.5rem);
   position: absolute;
   right: 9%;
-  top: 7%;
+  top: 5%;
   width: clamp(15.625rem, 11.1378rem + 22.4359vw, 37.5rem);
   z-index: -10;
 }
@@ -35,7 +35,7 @@
 
 .home-paragraph {
   color: var(--White);
-  font-size: clamp(0.9rem, 0.8385rem + 0.3077vw, 1.2rem);
+  font-size: clamp(0.9rem, 0.8385rem + 0.3077vw, 1.2rem)
 }
 
 .reveal {
