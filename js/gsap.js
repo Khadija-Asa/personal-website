@@ -34,7 +34,7 @@ let sections = gsap.utils.toArray(".box-card");
 
 gsap.to(sections, {
   xPercent: -100 * (sections.length + 0),
-  ease: "linear",
+  ease: "none",
   scrollTrigger: {
     trigger: ".box",
     pin: true,
