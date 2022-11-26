@@ -1,6 +1,5 @@
 /* services */
 .services {
-  
 }
 
 .services-box {
@@ -10,13 +9,73 @@
   padding-top: 5rem;
 }
 
-.services-box p {
+/* title */
+.services-title {
+}
+
+.services-title span {
   display: flex;
   justify-content: center;
 }
 
-.services-box p:nth-child(2) {
+.services-title span:nth-child(2) {
   color: var(--Light-Purple);
   font-style: italic;
 }
 
+/* box card */
+.box {
+  display: flex;
+  gap: 3.5rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.box-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.box-card h4 {
+  color: var(--Light-Purple);
+  opacity: .5;
+  font-size: 1.5rem;
+}
+
+.box-card p {
+  font-family: 'Poppins';
+  font-size: 1rem;
+}
+
+.card-img img {
+  background-color: var(--Light-Purple);
+  height: 50vh;
+  border-radius: 50px 0px 0 0;
+}
+
+.card-text hr {
+  opacity: 1;
+}
+
+.services-line_down {
+  border-left: 2px solid var(--White);
+  height: 130px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  opacity: .8;
+}
+
+.services-line_up {
+  border-left: 2px solid var(--White);
+  border-top: 0;
+  height: 130px;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  z-index: -1;
+  opacity: .8;
+}

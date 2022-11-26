@@ -130,6 +130,7 @@
   transition: 0.8s ease-in-out;
   width: 100%;
   z-index: 1;
+  overflow-y: hidden!important;
 }
 
 .nav-menu.active {

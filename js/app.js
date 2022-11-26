@@ -42,8 +42,8 @@ TweenMax.to(".third", 1.5, {
 // Landing animation
 // let tl = gsap.timeline();
 
-// tl.from('.links-separation', {
-//   duration: 5,
+// tl.from('hr', {
+//   duration: 2,
 //   width: 0
 // })
 
@@ -63,3 +63,20 @@ TweenMax.to(".third", 1.5, {
 //     form.reset();
 //   }
 // }
+
+gsap.registerPlugin(ScrollTrigger);
+
+let sections = gsap.utils.toArray(".box-card");
+
+gsap.to(sections, {
+  xPercent: -100 * (sections.length + 0),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".box",
+    pin: true,
+    scrub: 1,
+    end: () => "+=" + document.querySelector(".box").offsetWidth
+  }
+});
+
+

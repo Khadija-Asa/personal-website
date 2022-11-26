@@ -46,6 +46,10 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /* Set core body defaults */
 body {
   background-color: var(--Dark-Purple);
@@ -68,7 +72,7 @@ select {
   html:focus-within {
    scroll-behavior: smooth;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -148,25 +152,3 @@ hr {
   border-top: 4px solid var(--Light-Purple);
   width: 1.5rem;
 }
-
-/* .title-page {
-  align-items: center;
-  color: var(--White);
-  font-family: 'Aboreto';
-  font-size: 1rem;
-  gap: .8rem;
-  justify-content: center;
-}
-
-.title-number {
-  font-family: 'Boska';
-  font-weight: 600;
-  letter-spacing: .2rem;
-}
-
-.title-page hr {
-  border-top: 2px solid;
-  color: var(--Light-Purple);
-  width: 2rem;
-  z-index: -1;
-} */
