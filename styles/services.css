@@ -26,7 +26,7 @@
 /* box card */
 .box {
   display: flex;
-  gap: 3.5rem;
+  gap: 10rem;
   width: 100%;
   height: 100vh;
 }
@@ -34,7 +34,6 @@
 .box-card {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
   justify-content: center;
 }
 
@@ -50,7 +49,6 @@
 }
 
 .card-img img {
-  background-color: var(--Light-Purple);
   height: 50vh;
   border-radius: 50px 0px 0 0;
 }
@@ -59,7 +57,7 @@
   opacity: 1;
 }
 
-.services-line_down {
+/* .services-line_down {
   border-left: 2px solid var(--White);
   height: 130px;
   position: absolute;
@@ -78,4 +76,4 @@
   bottom: 50%;
   z-index: -1;
   opacity: .8;
-}
+} */
