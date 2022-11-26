@@ -27,18 +27,29 @@ TweenMax.to(".third", 1.5, {
 //   width: 0
 // })
 
+
 // Cards animation
 gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray(".box-card");
 
 gsap.to(sections, {
-  xPercent: -100 * (sections.length + 0),
+  xPercent: -100 * (sections.length + 2),
   ease: "none",
   scrollTrigger: {
     trigger: ".box",
     pin: true,
     scrub: -2,
-    end: () => "+=" + document.querySelector(".box").offsetWidth
+    end: () => "+=4000px" + document.querySelector(".box").offsetWidth
   }
 });
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+const smoother = ScrollSmoother.create({
+ content: "#content",
+ smooth: 3,
+ effects: true
+});
+
+smoother.effects("img", { speed: "auto" });
