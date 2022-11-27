@@ -19,6 +19,7 @@
 }
 
 .home-title lottie-player {
+  filter: drop-shadow(0 0 .3rem var(--Light-Purple));
   height: clamp(15.625rem, 11.1378rem + 22.4359vw, 37.5rem);
   position: absolute;
   right: 9%;

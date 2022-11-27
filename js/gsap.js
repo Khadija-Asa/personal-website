@@ -34,22 +34,12 @@ gsap.registerPlugin(ScrollTrigger);
 let sections = gsap.utils.toArray(".box-card");
 
 gsap.to(sections, {
-  xPercent: -100 * (sections.length + 2),
+  xPercent: -100 * (sections.length + 1),
   ease: "none",
   scrollTrigger: {
     trigger: ".box",
     pin: true,
     scrub: -2,
-    end: () => "+=4000px" + document.querySelector(".box").offsetWidth
+    end: () => "+=3000px" + document.querySelector(".box").offsetWidth
   }
 });
-
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-const smoother = ScrollSmoother.create({
- content: "#content",
- smooth: 3,
- effects: true
-});
-
-smoother.effects("img", { speed: "auto" });
