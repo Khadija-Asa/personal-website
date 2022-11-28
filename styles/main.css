@@ -152,3 +152,21 @@ hr {
   border-top: 4px solid var(--Light-Purple);
   width: 1.5rem;
 }
+
+/* page title */
+.page-title {
+  color: var(--White);
+  font-family: 'Anton';
+  font-size: clamp(1.5rem, 1.2949rem + 1.0256vw, 2.5rem);
+  padding-top: 5rem;
+}
+
+.page-title span {
+  color: var(--White);
+  display: flex;
+}
+
+.page-title span:nth-child(3) {
+  color: var(--Light-Purple);
+  font-style: italic;
+}

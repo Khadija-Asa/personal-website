@@ -1,0 +1,59 @@
+/* contact */
+.contact {
+  height: 180vh;
+
+}
+
+.contact-part {
+  background-color: var(--Light-Purple);
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+/* part text */
+.part-text {
+  align-items: center;
+  background-color: var(--Dark-Purple);
+  border: 2px solid var(--Light-Purple);
+  flex-direction: column;
+}
+
+.text-list a {
+  color: var(--White);
+  font-size: 1rem;
+}
+
+.part-text lottie-player {
+  filter: drop-shadow(0 0 .3rem var(--Light-Purple));
+  height: clamp(15rem, 12.9487rem + 10.2564vw, 25rem);
+}
+
+/* part calendly */
+.part-calendly {
+  background-color: var(--Light-Purple);
+}
+
+/* calendly */
+.calendly-badge-widget .calendly-badge-content span {
+  display:none!important;
+}
+
+/* media queries */
+@media screen and (min-width: 1024px) {
+  .contact-part {
+    flex-direction: row;
+  }
+  .part-text {
+    width: 40%;
+  }
+  .part-calendly {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .text-list a {
+    font-size: 1.2rem;
+  }
+}
