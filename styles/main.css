@@ -90,7 +90,7 @@ select {
 
 @media screen and (min-width: 426px) {
   .main-style {
-    padding: 0 5rem 0 10%;
+    padding: 0 6rem 0 6rem;
   }
 }
 

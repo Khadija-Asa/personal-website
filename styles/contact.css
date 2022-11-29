@@ -1,59 +1,89 @@
 /* contact */
-.contact {
-  height: 180vh;
-
-}
-
 .contact-part {
-  background-color: var(--Light-Purple);
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
+  height: auto;
+  justify-content: center;
 }
 
 /* part text */
-.part-text {
+/* .part-text {
   align-items: center;
   background-color: var(--Dark-Purple);
   border: 2px solid var(--Light-Purple);
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-.text-list a {
+.text-list li a {
   color: var(--White);
-  font-size: 1rem;
+  font-family: 'Anton';
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.text-list li a i {
+  color: var(--Light-Purple);
+  font-size: .5rem;
 }
 
 .part-text lottie-player {
   filter: drop-shadow(0 0 .3rem var(--Light-Purple));
   height: clamp(15rem, 12.9487rem + 10.2564vw, 25rem);
-}
+} */
 
 /* part calendly */
 .part-calendly {
   background-color: var(--Light-Purple);
+  border: 2px solid var(--White);
+  flex-direction: column;
 }
 
-/* calendly */
-.calendly-badge-widget .calendly-badge-content span {
-  display:none!important;
+.yo {
+  align-items: flex-end!important;
+  display: flex!important;
+  justify-content: center!important;
+}
+.part-calendly h5 {
+  color: var(--White);
+  font-size: clamp(1.2rem, 1.0769rem + 0.6154vw, 1.8rem);
+  padding: 10%;
+  font-family: 'Aventi';
+  text-align: justify;
+}
+
+.part-calendly p {
+  color: var(--Dark-Purple);
+  font-family: 'Poppins';
+  font-size: 1rem;
+  text-transform: none;
+}
+
+.calendly-inline-widget {
+  justify-content: center;
 }
 
 /* media queries */
 @media screen and (min-width: 1024px) {
   .contact-part {
-    flex-direction: row;
+    margin-top: 5rem;
   }
-  .part-text {
+  /* .part-text {
     width: 40%;
   }
   .part-calendly {
     width: 60%;
+  } */
+  .part-calendly h5 {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 7%;
+    padding-bottom: 0;
+    text-align: center;
   }
 }
 
-@media screen and (min-width: 375px) {
-  .text-list a {
+/* @media screen and (min-width: 375px) {
+  .text-list li a {
     font-size: 1.2rem;
   }
-}
+} */
