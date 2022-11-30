@@ -4,86 +4,51 @@
   justify-content: center;
 }
 
-/* part text */
-/* .part-text {
-  align-items: center;
-  background-color: var(--Dark-Purple);
-  border: 2px solid var(--Light-Purple);
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+/* part calendly */
+.calendly {
+  /* background-color: hsl(259, 92%, 76%, 0.2); */
 }
 
-.text-list li a {
-  color: var(--White);
-  font-family: 'Anton';
-  font-size: 1.5rem;
-  font-style: italic;
-}
-
-.text-list li a i {
-  color: var(--Light-Purple);
-  font-size: .5rem;
-}
-
-.part-text lottie-player {
-  filter: drop-shadow(0 0 .3rem var(--Light-Purple));
-  height: clamp(15rem, 12.9487rem + 10.2564vw, 25rem);
+/* .calendly-inline-widget {
+  justify-content: center!important;
 } */
 
-/* part calendly */
-.part-calendly {
-  background-color: var(--Light-Purple);
-  border: 2px solid var(--White);
-  flex-direction: column;
+/* part text */
+.part-text {
+  background: url(./../assets/illustrations/contact-bg-6-white.jpg);
+  background-repeat: no-repeat;
 }
 
-.yo {
-  align-items: flex-end!important;
-  display: flex!important;
-  justify-content: center!important;
-}
-.part-calendly h5 {
-  color: var(--White);
+.part-text h5 {
+  color: var(--Light-Purple);
+  flex-direction: row;
+  font-family: 'Anton';
   font-size: clamp(1.2rem, 1.0769rem + 0.6154vw, 1.8rem);
   padding: 10%;
-  font-family: 'Aventi';
-  text-align: justify;
 }
 
-.part-calendly p {
-  color: var(--Dark-Purple);
+.part-text h5::before {
+  border-top: 1px solid var(--White);
+  content: '';
+  width: 1.5rem;
+}
+
+.part-text p {
+  color: var(--White);
   font-family: 'Poppins';
   font-size: 1rem;
   text-transform: none;
 }
 
-.calendly-inline-widget {
-  justify-content: center;
-}
-
 /* media queries */
-@media screen and (min-width: 1024px) {
-  .contact-part {
-    margin-top: 5rem;
-  }
-  /* .part-text {
-    width: 40%;
-  }
-  .part-calendly {
-    width: 60%;
-  } */
-  .part-calendly h5 {
-    margin: 0 auto;
-    max-width: 1000px;
-    padding: 7%;
-    padding-bottom: 0;
-    text-align: center;
+@media screen and (max-width: 1023px) {
+  .calendly{
+    flex-direction: column;
   }
 }
 
-/* @media screen and (min-width: 375px) {
-  .text-list li a {
-    font-size: 1.2rem;
+@media screen and (min-width: 1024px) {
+  .part-text {
+    background-size: cover;
   }
-} */
+}
