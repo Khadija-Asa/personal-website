@@ -9,14 +9,14 @@
   /* background-color: hsl(259, 92%, 76%, 0.2); */
 }
 
-/* .calendly-inline-widget {
-  justify-content: center!important;
-} */
-
 /* part text */
 .part-text {
-  background: url(./../assets/illustrations/contact-bg-6-white.jpg);
-  background-repeat: no-repeat;
+  /* background-image: url(./../assets/illustrations/contact-bg-7.jpg); */
+  /* background-color: hsl(259, 92%, 76%, 0.2); */
+  border: 2px solid var(--White);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 30px 15px;
 }
 
 .part-text h5 {
@@ -24,20 +24,35 @@
   flex-direction: row;
   font-family: 'Anton';
   font-size: clamp(1.2rem, 1.0769rem + 0.6154vw, 1.8rem);
-  padding: 10%;
-}
-
-.part-text h5::before {
-  border-top: 1px solid var(--White);
-  content: '';
-  width: 1.5rem;
 }
 
 .part-text p {
   color: var(--White);
   font-family: 'Poppins';
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 0.859rem + 0.2051vw, 1.1rem);
   text-transform: none;
+}
+
+.text-list {
+  color: var(--White);
+}
+
+.text-list a {
+  color: var(--Light-Purple);
+  font-weight: 900;
+  opacity: .7;
+}
+
+.text-list a:hover {
+  color: var(--White);
+  opacity: 1;
+  transition: .3s ease;
+  transform: translate(20px, 0);
+}
+
+.list-title {
+  font-size: clamp(0.9rem, 0.859rem + 0.2051vw, 1.1rem);
+  text-transform: uppercase;
 }
 
 /* media queries */
@@ -45,10 +60,36 @@
   .calendly{
     flex-direction: column;
   }
+  .text-img img{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .part-text {
+    padding: 50px 40px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .part-text {
-    background-size: cover;
+    padding: 60px 50px 0 60px;
+  }
+  .text-img {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .text-img img {
+    filter: drop-shadow(0 0 .3rem var(--Light-Purple));
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .part-text {
+    padding: 70px 60px 0 60px;
+  }
+  .text-list {
+    margin-bottom: -100px;
   }
 }

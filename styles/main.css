@@ -170,3 +170,12 @@ hr {
   color: var(--Light-Purple);
   font-style: italic;
 }
+
+/* highlight */
+.high-purple {
+  color: var(--Light-Purple);
+}
+
+.high-weight {
+  font-weight: 900;
+}
