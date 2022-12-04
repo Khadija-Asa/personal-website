@@ -29,17 +29,17 @@ TweenMax.to(".third", 1.5, {
 
 
 // Cards animation
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-let sections = gsap.utils.toArray(".box-card");
+// let sections = gsap.utils.toArray(".box-card");
 
-gsap.to(sections, {
-  xPercent: -100 * (sections.length + 1),
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".box",
-    pin: true,
-    scrub: -2,
-    end: () => "+=3000px" + document.querySelector(".box").offsetWidth
-  }
-});
+// gsap.to(sections, {
+//   xPercent: -100 * (sections.length + 1),
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".box",
+//     pin: true,
+//     scrub: -2,
+//     end: () => "+=3000px" + document.querySelector(".box").offsetWidth
+//   }
+// });
