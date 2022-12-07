@@ -27,7 +27,6 @@ TweenMax.to(".third", 1.5, {
 //   width: 0
 // })
 
-
 // Cards animation
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -43,3 +42,4 @@ TweenMax.to(".third", 1.5, {
 //     end: () => "+=3000px" + document.querySelector(".box").offsetWidth
 //   }
 // });
+

@@ -4,15 +4,9 @@
   justify-content: center;
 }
 
-/* part calendly */
-.calendly {
-  /* background-color: hsl(259, 92%, 76%, 0.2); */
-}
-
 /* part text */
 .part-text {
-  /* background-image: url(./../assets/illustrations/contact-bg-7.jpg); */
-  /* background-color: hsl(259, 92%, 76%, 0.2); */
+  background-color: var(--Dark-Purple);
   border: 2px solid var(--White);
   flex-direction: column;
   justify-content: flex-start;
