@@ -304,6 +304,7 @@
 
 .landing-button a:hover {
   background-color: var(--Light-Purple);
+  cursor: none;
   font-weight: 900;
   transform: translate(0, -5px);
 }

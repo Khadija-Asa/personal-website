@@ -83,6 +83,14 @@ select {
   }
 }
 
+*:hover {
+  cursor: none;
+}
+
+a {
+  cursor: none;
+}
+
 /* main style padding */
 .main-style {
   padding: 0 1.5rem 0 1.5rem;

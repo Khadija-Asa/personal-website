@@ -46,6 +46,7 @@ footer {
 
 .footer-button a:hover {
   background-color: var(--White);
+  cursor: none;
   transform: translate(0, -5px);
 }
 
