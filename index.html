@@ -14,13 +14,13 @@
   <title>Khadidja A. Développeur Web</title>
 
   <!-- Icons -->
-  <link rel="shortcut icon" href="./assets/illustrations/icon-logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/illustrations/logo.svg" type="image/x-icon">
   <link rel="stylesheet" href="./assets/fontawesome-free-6.1.2-web/css/all.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   
   <!-- Libraries css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- Jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -40,15 +40,15 @@
 <body>
 
   <!-- overlay -->
-  <!-- <div class="overlay first"></div>
+  <div class="overlay first"></div>
   <div class="overlay second"></div>
-  <div class="overlay third"></div> -->
+  <div class="overlay third"></div>
 
   <header>
     <div class="header shadow d-flex">
       <div class="brand d-flex">
         <a href="#">
-          <img src="assets/illustrations/icon-logo.png" alt="Logo Khadidja A.">
+          <img src="assets/illustrations/logo.svg" alt="Logo Khadidja A.">
         </a>
       </div>
 
@@ -484,8 +484,12 @@
 
   </main>
 
-  <footer>
+  <!-- logo -->
+  <div class="footer-logo text-center">
+    <img src="./assets/illustrations/white-logo.svg" alt="">
+  </div>
 
+  <footer>
     <!-- footer -->
     <section class="footer" id="footer">
       <!-- title -->
@@ -553,18 +557,19 @@
     <script>
       AOS.init();
     </script>
+    <!-- MAGIC MOUSE -->
     <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
     <script type="text/javascript">
       options = {
         "cursorOuter": "circle-basic",
-  "hoverEffect": "pointer-blur",
-  "hoverItemMove": false,
-  "defaultCursor": false,
-  "outerWidth": 41,
-  "outerHeight": 41
+        "hoverEffect": "pointer-blur",
+        "hoverItemMove": false,
+        "defaultCursor": false,
+        "outerWidth": 41,
+        "outerHeight": 41
         };
       magicMouse(options);
-  </script>
+    </script>
 
   </body>
 </html>

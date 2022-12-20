@@ -300,7 +300,7 @@
 
 .landing-button a:nth-child(1) {
   background-color: var(--Light-Purple);
-}
+} 
 
 .landing-button a:hover {
   background-color: var(--Light-Purple);
