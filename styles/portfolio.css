@@ -1,19 +1,79 @@
 /* portfolio */
 .portfolio {
-  background-color: var(--Light-Purple);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='1' viewBox='0 0 6 6' %3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-  clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0 100%);
+  /* background-color: hsl(259, 92%, 76%, .3);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='1' viewBox='0 0 6 6' %3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E"); */
+  padding-bottom: 10rem;
 }
 
-.portfolio .page-title span:nth-child(3) {
+/* .portfolio .page-title span:nth-child(3) {
   color: var(--Dark-Purple);
 }
 
 .portfolio .number-page {
   color: var(--Dark-Purple);
+} */
+
+/* mockup */
+
+
+/* paragraph */
+.mockup-paragraph h2 {
+  color: var(--White);
+  font-family: 'Aventi';
 }
 
-.carousel {
-  margin-top: 220px;
+/* cards */
+.mockup-figure {
+  gap: 1rem;
+  margin: auto;
 }
 
+.mockup-figure figure {
+  background-color: var(--Dark-Purple);
+  border: 2px solid hsl(259, 92%, 76%, .1);
+  filter: drop-shadow(0 0 .1rem var(--Light-Purple));
+  padding: 5px;
+  transition: transform 1s;
+}
+
+.mockup-figure figure:hover {
+  transform: scale(1.03);
+}
+
+
+.mockup-figure img {
+  max-width: 350px;
+  width: 100%;
+}
+
+.mockup-figure figcaption {
+  background-color: hsl(259, 92%, 76%, .3);
+  border: thin solid hsl(259, 92%, 76%, .1);
+  color: var(--White);
+  font-style: italic;
+  padding: 3px;
+}
+
+/* media queries */
+@media screen and (min-width: 605px) {
+  .mockup-figure {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mockup-figure {
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .mockup-figure {
+    gap: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
