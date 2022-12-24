@@ -188,3 +188,21 @@ hr {
 .high-weight {
   font-weight: 900;
 }
+
+/* back to top */
+.back-to-top a {
+  font-size: 30px;
+}
+
+.back-to-top a:hover {
+  font-size: 35px;
+}
+
+#btn-back-to-top {
+  bottom: 30px;
+  color: var(--White);
+  display: none;
+  opacity: .8;
+  position: fixed;
+  right: 30px;
+}

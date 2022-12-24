@@ -32,6 +32,12 @@
   color: var(--White);
 }
 
+.text-list li {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
 .text-list a {
   color: var(--Light-Purple);
   font-weight: 900;
@@ -41,8 +47,7 @@
 .text-list a:hover {
   color: var(--White);
   opacity: 1;
-  transition: .3s ease;
-  transform: translate(20px, 0);
+  transition: all .3s ease;
 }
 
 .list-title {
