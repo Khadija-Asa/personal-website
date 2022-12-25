@@ -1,0 +1,39 @@
+/* mentions legales */
+.modal-content {
+  background-color: var(--Dark-Purple);
+  border: 2px solid var(--White);
+  border-radius: 0;
+  color: var(--White);
+}
+
+/* title */
+.modal-title {
+  font-weight: 600;
+}
+
+/* subtitles */
+.modal-subtitles {
+  color: var(--Light-Purple);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* links */
+.modal-content a {
+  color: var(--Light-Purple);
+}
+
+/* buttons */
+.modal-header .close {
+  background: transparent;
+  background: var(--Light-Purple);
+  border: none;
+  padding: .2rem .5rem;
+}
+
+.modal-footer .btn {
+  background: var(--Light-Purple);
+  border-radius: 0;
+  color: var(--Dark-Purple);
+}
