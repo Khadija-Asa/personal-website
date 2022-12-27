@@ -17,9 +17,35 @@
 
 
 /* paragraph */
-.mockup-paragraph h2 {
+.mockup-paragraph {
   color: var(--White);
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.mockup h2 {
+  font-size: clamp(1.3rem, 1.1974rem + 0.5128vw, 1.8rem);
+}
+
+.mockup-number {
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.number-project,
+.number-year {
+  color: var(--Light-Purple);
   font-family: 'Aventi';
+  font-size: clamp(2.5rem, 2.3974rem + 0.5128vw, 3rem);
+}
+
+.mockup-line {
+  border-left: 1px solid var(--White);
+  height: 40px;
+  padding: 0;
+  margin: 0;
 }
 
 /* cards */

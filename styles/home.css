@@ -38,7 +38,8 @@
 
 .home-paragraph {
   color: var(--White);
-  font-size: clamp(0.9rem, 0.8385rem + 0.3077vw, 1.2rem)
+  font-size: clamp(0.9rem, 0.8795rem + 0.1026vw, 1rem);
+
 }
 
 .reveal {
@@ -79,23 +80,16 @@
 
 .list-question {
   flex-direction: column;
-  gap: .3rem;
 }
 
 .list-question li {
+  align-items: center;
   display: flex;
-  align-items: flex-end;
 }
 
 .list-question i {
   color: var(--Light-Purple);
-  font-size: .8rem;
-}
-
-.paragraph-highlight {
-  color: var(--Light-Purple);
-  font-weight: 100;
-  opacity: 1;
+  font-size: 1.5rem;
 }
 
 /* paragraph button */

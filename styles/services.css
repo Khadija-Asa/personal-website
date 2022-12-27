@@ -1,11 +1,12 @@
 /* services */
 .services {
-  padding-bottom: 150px;
+  padding-bottom: 10rem;
 }
 
 /* paragraph */
 .box-paragraph {
   color: var(--White);
+  font-size: clamp(0.9rem, 0.859rem + 0.2051vw, 1.1rem);
 }
 
 /* card */
