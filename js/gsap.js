@@ -18,28 +18,3 @@ TweenMax.to(".third", 1.5, {
   top: "-100%",
   ease: Expo.easeInOut
 });
-
-// Landing animation
-// let tl = gsap.timeline();
-
-// tl.from('hr', {
-//   duration: 2,
-//   width: 0
-// })
-
-// Cards animation
-// gsap.registerPlugin(ScrollTrigger);
-
-// let sections = gsap.utils.toArray(".box-card");
-
-// gsap.to(sections, {
-//   xPercent: -100 * (sections.length + 1),
-//   ease: "none",
-//   scrollTrigger: {
-//     trigger: ".box",
-//     pin: true,
-//     scrub: -2,
-//     end: () => "+=3000px" + document.querySelector(".box").offsetWidth
-//   }
-// });
-
